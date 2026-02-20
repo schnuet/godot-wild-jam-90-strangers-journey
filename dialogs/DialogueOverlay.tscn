@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://bww1yup1rqvwx"]
+
+[ext_resource type="FontFile" uid="uid://chuit354v2gmb" path="res://design/fonts/Skranji-Bold.ttf" id="1_6wtx0"]
+[ext_resource type="Script" uid="uid://5ca3wmm5h3rb" path="res://dialogs/dialogue_overlay.gd" id="1_035sa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j0ir1"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"femme",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"mercenary",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"priest",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"veteran",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"werewolf",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j0ir1"]
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.21, 0.15959999, 0.15959999, 1)
+
+[node name="DialogueOverlay" type="Control" unique_id=1931304760]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_035sa")
+metadata/_edit_lock_ = true
+
+[node name="BackgroundColorRect" type="ColorRect" parent="." unique_id=2132047080]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0, 0, 0, 0.3529412)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1719197438]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -616.0
+offset_top = 125.0
+offset_right = -111.0
+offset_bottom = 636.0
+grow_horizontal = 0
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("1_6wtx0")
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+text = "Hello driver.
+
+On your way to the castle, aren't you?
+
+Are you ready to save a lost soul?"
+
+[node name="TextRevealTimer" type="Timer" parent="." unique_id=1327137364]
+wait_time = 0.05
+one_shot = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1854566770]
+sprite_frames = SubResource("SpriteFrames_j0ir1")
+animation = &"werewolf"
+
+[node name="Buttons" type="VBoxContainer" parent="." unique_id=578794042]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -621.0
+offset_top = -390.0
+offset_right = -89.0
+offset_bottom = -81.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="Option1" type="Button" parent="Buttons" unique_id=1422854197]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_6wtx0")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_j0ir1")
+text = "Tell me more."
+
+[node name="Option2" type="Button" parent="Buttons" unique_id=1033281838]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_6wtx0")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_j0ir1")
+text = "Tell me more."
+
+[node name="Option3" type="Button" parent="Buttons" unique_id=402374024]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_6wtx0")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_j0ir1")
+text = "Tell me more."
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="timeout" from="TextRevealTimer" to="." method="_on_text_reveal_timer_timeout"]
+[connection signal="pressed" from="Buttons/Option1" to="." method="_on_option_1_pressed"]
+[connection signal="pressed" from="Buttons/Option2" to="." method="_on_option_2_pressed"]
+[connection signal="pressed" from="Buttons/Option3" to="." method="_on_option_3_pressed"]

@@ -1,0 +1,26 @@
+{
+	"greeting": {
+		"lines": [
+			"Hello traveller.",
+			"On your path through dangerous lands, are you?",
+			"If you need a strong hand, I might lend you my company. \n\nI've slain a monster or two.",
+			"And I need to reach the castle without delay."
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny the request", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,mercenary"
+		]
+	},
+	"deny": {
+		"lines": [
+			"If this is your decision, I must accept it. But you might regret it when you hear the knives of the first ambush.",
+			"action:reject_character,mercenary"
+		]
+	}
+}

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dv4oo83esxgbx"]
+
+[ext_resource type="Script" uid="uid://c4v5w4emtjff6" path="res://characters/character/camp_character.gd" id="1_8lqy5"]
+
+[node name="CampCharacter" type="Area2D" unique_id=609725596]
+script = ExtResource("1_8lqy5")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=60346602]
+offset_left = -75.0
+offset_top = -474.0
+offset_right = 75.0
+offset_bottom = -1.0

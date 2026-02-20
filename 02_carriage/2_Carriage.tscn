@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://bp1r81t5xiya0"]
+
+[ext_resource type="Script" uid="uid://beouquja3asey" path="res://02_carriage/carriage.gd" id="1_cnnnc"]
+[ext_resource type="PackedScene" uid="uid://cns7ts7nudjt2" path="res://02_carriage/character_cards/CharacterPlace.tscn" id="1_wp2th"]
+
+[node name="Carriage" type="Node2D" unique_id=902744758]
+script = ExtResource("1_cnnnc")
+
+[node name="Control" type="Control" parent="." unique_id=1258426429]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Inside" type="VBoxContainer" parent="Control" unique_id=1319489522]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -345.0
+offset_top = -282.0
+offset_right = 345.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="TopRow" type="HBoxContainer" parent="Control/Inside" unique_id=843637668]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="CharacterPlace" parent="Control/Inside/TopRow" unique_id=431486651 instance=ExtResource("1_wp2th")]
+layout_mode = 2
+
+[node name="CharacterPlace2" parent="Control/Inside/TopRow" unique_id=564001745 instance=ExtResource("1_wp2th")]
+layout_mode = 2
+seat_number = 1
+
+[node name="CharacterPlace3" parent="Control/Inside/TopRow" unique_id=1677983923 instance=ExtResource("1_wp2th")]
+layout_mode = 2
+seat_number = 2
+
+[node name="CharacterPlace4" parent="Control/Inside/TopRow" unique_id=1112970863 instance=ExtResource("1_wp2th")]
+layout_mode = 2
+seat_number = 3
+
+[node name="BottomRow" type="HBoxContainer" parent="Control/Inside" unique_id=868049392]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="CharacterPlace" parent="Control/Inside/BottomRow" unique_id=1501168553 instance=ExtResource("1_wp2th")]
+layout_mode = 2
+seat_number = 4
+
+[node name="CharacterPlace2" parent="Control/Inside/BottomRow" unique_id=132594026 instance=ExtResource("1_wp2th")]
+layout_mode = 2
+seat_number = 5
+
+[node name="CharacterPlace3" parent="Control/Inside/BottomRow" unique_id=2074513036 instance=ExtResource("1_wp2th")]
+layout_mode = 2
+seat_number = 6
+
+[node name="CharacterPlace4" parent="Control/Inside/BottomRow" unique_id=909978285 instance=ExtResource("1_wp2th")]
+layout_mode = 2
+seat_number = 7
+
+[node name="Outside" type="Control" parent="Control" unique_id=2081251498]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -182.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0

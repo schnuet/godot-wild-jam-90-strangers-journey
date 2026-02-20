@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dr2idt6t5e2lj"]
+
+[ext_resource type="Script" uid="uid://bkxw1bkkps2lw" path="res://characters/mercenary/mercenary.gd" id="1_xwmey"]
+[ext_resource type="JSON" path="res://characters/mercenary/MercenaryDialogueOptions.json" id="2_ekah7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xwmey"]
+size = Vector2(150, 320)
+
+[node name="Mercenary" type="Area2D" unique_id=1413212771]
+script = ExtResource("1_xwmey")
+character_name = "mercenary"
+dialogue_options = ExtResource("2_ekah7")
+metadata/_custom_type_script = "uid://c4v5w4emtjff6"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=523519374]
+position = Vector2(0, -160)
+shape = SubResource("RectangleShape2D_xwmey")

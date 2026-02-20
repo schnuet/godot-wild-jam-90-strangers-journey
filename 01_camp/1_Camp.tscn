@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://vum2yxlh27gl"]
+
+[ext_resource type="Script" uid="uid://bm3dnfay057y8" path="res://01_camp/1_Camp/1_camp.gd" id="1_xqec4"]
+[ext_resource type="PackedScene" uid="uid://dr2idt6t5e2lj" path="res://characters/mercenary/Mercenary.tscn" id="1_y0u66"]
+
+[node name="Camp" type="Node2D" unique_id=1868370570]
+script = ExtResource("1_xqec4")
+
+[node name="Mercenary" parent="." unique_id=1532246486 instance=ExtResource("1_y0u66")]
+position = Vector2(639, 737)
