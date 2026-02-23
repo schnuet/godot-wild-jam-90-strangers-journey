@@ -1,0 +1,26 @@
+{
+	"greeting": {
+		"lines": [
+			"I am delighted to meet you, sir.",
+			"It is my most urgent desire to take my beloved bees onto a journey far away from these imbecile people.",
+			"Name your price and the money will be yours."
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,beekeeper"
+		]
+	},
+	"deny": {
+		"lines": [
+			"You should bee sorry.",
+			"...sorry.",
+			"action:reject_character,beekeeper"
+		]
+	}
+}

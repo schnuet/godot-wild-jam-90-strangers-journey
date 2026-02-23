@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://duj11bx5to0bw"
+path="res://.godot/imported/FEMME FATALE.wav-326ef7136db3c3403e942cd98417fe0f.sample"
+
+[deps]
+
+source_file="res://dialogs/speech/FEMME FATALE/FEMME FATALE.wav"
+dest_files=["res://.godot/imported/FEMME FATALE.wav-326ef7136db3c3403e942cd98417fe0f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

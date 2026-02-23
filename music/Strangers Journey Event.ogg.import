@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dgq2eo3djs0h8"
+path="res://.godot/imported/Strangers Journey Event.ogg-f37c27b267460fcc2b8a0431e8a6c694.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/Strangers Journey Event.ogg"
+dest_files=["res://.godot/imported/Strangers Journey Event.ogg-f37c27b267460fcc2b8a0431e8a6c694.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

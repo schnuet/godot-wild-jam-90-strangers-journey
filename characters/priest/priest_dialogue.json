@@ -1,0 +1,27 @@
+{
+	"greeting": {
+		"lines": [
+			"The Lord bless you, my son.",
+			"As I see it, you are traveling in this wicked region without God's grace.",
+			"That is a foolish approach and your journey will end in disgrace and disaster.",
+			"Let me lend you a guiding hand, for we live in dark times."
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,priest"
+		]
+	},
+	"deny": {
+		"lines": [
+			"May the lord have mercy on your ways.",
+			"...and may you not perish from your wounds.",
+			"action:reject_character,priest"
+		]
+	}
+}

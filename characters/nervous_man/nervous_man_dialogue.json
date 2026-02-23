@@ -1,0 +1,28 @@
+{
+	"greeting": {
+		"lines": [
+			"Ehhhh … what?! Be gone!",
+			"Oh, it is you. I was expecting...",
+			"...ehhh, never mind.",
+			"Please forgive my behaviour; I have not been resting well lately.",
+			"My mind is wandering and I myself must also set out on a journey.",
+			"A journey, yes, that would ease my mind..."
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,nervous_man"
+		]
+	},
+	"deny": {
+		"lines": [
+			"I shall stay in this village and suffer the consequences.",
+			"action:reject_character,nervous_man"
+		]
+	}
+}

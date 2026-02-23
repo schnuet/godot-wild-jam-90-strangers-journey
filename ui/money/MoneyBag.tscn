@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cp7gjhriwk1i"]
+
+[ext_resource type="Script" uid="uid://b5mmr57vtyofs" path="res://ui/money/money_bag.gd" id="1_wwp21"]
+[ext_resource type="Theme" uid="uid://p58o4y2jdivt" path="res://ui/theme.tres" id="2_e8x32"]
+[ext_resource type="Texture2D" uid="uid://bf5fivla1lkgu" path="res://01_camp/geld_icon.png" id="3_x3c2k"]
+
+[node name="MoneyBag" type="Control" unique_id=1343773189]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_wwp21")
+
+[node name="Label" type="Label" parent="." unique_id=2015336412]
+layout_mode = 0
+offset_left = 57.0
+offset_top = -2.0
+offset_right = 97.0
+offset_bottom = 63.0
+theme = ExtResource("2_e8x32")
+theme_override_font_sizes/font_size = 50
+text = "0"
+
+[node name="GeldIcon" type="Sprite2D" parent="." unique_id=854427493]
+position = Vector2(28, 28)
+texture = ExtResource("3_x3c2k")

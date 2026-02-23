@@ -1,0 +1,27 @@
+{
+	"greeting": {
+		"lines": [
+			"Mmh, greetings.",
+			"That's an interesting means of transport you have there.",
+			"I wouldn't mind making use of your services.",
+			"And it would satisfy some of my desires... mmmh, never mind.",
+			"But consider me and my... talents at your disposal for your journey."
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,cursed_one"
+		]
+	},
+	"deny": {
+		"lines": [
+			"Then I will satisfy my cravings elsewhere.",
+			"action:reject_character,cursed_one"
+		]
+	}
+}

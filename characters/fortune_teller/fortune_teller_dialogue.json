@@ -1,0 +1,28 @@
+{
+	"greeting": {
+		"lines": [
+			"I see a journey, a journey full of events.",
+			"Miracles and misdeeds, rejoice and despair...",
+			"But pay no heed to my rambling words, my dear coachman.",
+			"You must make a decision. I can see that.",
+			"Choose wisely, and the way will be made smooth for you."
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,fortune_teller"
+		]
+	},
+	"deny": {
+		"lines": [
+			"I see pain and suffering in your future. And death.",
+			"Lots of deaths.",
+			"action:reject_character,fortune_teller"
+		]
+	}
+}

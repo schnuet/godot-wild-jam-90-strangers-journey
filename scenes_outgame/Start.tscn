@@ -1,3 +1,54 @@
 [gd_scene format=3 uid="uid://dau4mq3b6puc1"]
 
+[ext_resource type="PackedScene" uid="uid://dkua340gu4s8k" path="res://03_map/3_Map.tscn" id="1_c02aq"]
+[ext_resource type="Script" uid="uid://cdoqfodiersif" path="res://scenes_outgame/start.gd" id="1_xultp"]
+[ext_resource type="FontFile" uid="uid://cq0wxflmuvpn8" path="res://design/fonts/UnifrakturCook-Bold.ttf" id="3_sf1ho"]
+[ext_resource type="Theme" uid="uid://p58o4y2jdivt" path="res://ui/theme.tres" id="4_6oidx"]
+[ext_resource type="Texture2D" uid="uid://dh1s12b0e12so" path="res://scenes_outgame/assets/sj-logo-transparent.png" id="5_sf1ho"]
+
 [node name="Start" type="Node2D" unique_id=1915823502]
+script = ExtResource("1_xultp")
+
+[node name="Map" parent="." unique_id=1246774286 instance=ExtResource("1_c02aq")]
+interactive = false
+
+[node name="Label" type="Label" parent="." unique_id=1919397346]
+visible = false
+offset_left = 221.0
+offset_top = 306.0
+offset_right = 880.0
+offset_bottom = 657.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.20784314)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 4
+theme_override_fonts/font = ExtResource("3_sf1ho")
+theme_override_font_sizes/font_size = 128
+text = "Strangers'
+Journey"
+
+[node name="StartButton" type="Button" parent="." unique_id=1216293564]
+offset_left = 229.0
+offset_top = 745.0
+offset_right = 786.0
+offset_bottom = 829.0
+theme = ExtResource("4_6oidx")
+theme_override_font_sizes/font_size = 48
+text = "Begin your Journey"
+
+[node name="CreditsButton" type="Button" parent="." unique_id=749102012]
+offset_left = 1991.0
+offset_top = -146.0
+offset_right = 2268.0
+offset_bottom = -62.0
+theme = ExtResource("4_6oidx")
+theme_override_font_sizes/font_size = 32
+text = "View Credits"
+
+[node name="logo" type="Sprite2D" parent="." unique_id=756590814]
+position = Vector2(519, 482)
+texture = ExtResource("5_sf1ho")
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="CreditsButton" to="." method="_on_credits_button_pressed"]

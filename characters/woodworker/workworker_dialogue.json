@@ -1,0 +1,48 @@
+{
+	"greeting": {
+		"lines": [
+			"It seems as though your coach is already bursting at the seams.",
+			"This is not acceptable, my lord.",
+			"For a small fee, I will create additional space to make your onward journey as pleasant as possible.",
+		],
+		"options": [
+			["Add seats to carriage (400 Gold coins)", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"It will be ready faster that you thought.",
+			"action:accept_woodwork"
+		]
+	},
+	"deny": {
+		"lines": [
+			"You will have to travel along in your tight space, then.",
+			"action:deny_woodwork"
+		]
+	},
+	"no_money": {
+		"lines": [
+			"Your coin won't pay for my expenses, it seems. I have a family to feed and times are dark.",
+			"You will have to leave people behind."
+		]
+	},
+	"first_done": {
+		"lines": [
+			"New places are installed in your coach. You should be able to take more passengers aboard now."
+		]
+	},
+	"second_done": {
+		"lines": [
+			"Now, you have all the places that I could possibly add to a carriage of this make.",
+			"Enjoy the additional space and use it well."
+		]
+	},
+	"already_done": {
+		"lines": [
+			"No more places can be added on to this structure without breaking it apart.",
+			"You will have to build a new one someday... but alas, I can't provide this service here."
+		]
+	}
+}

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bkcob3wq3u2h4"]
+
+[ext_resource type="Script" uid="uid://bct0fsmf7nx8w" path="res://scenes_outgame/game_over.gd" id="1_rggfd"]
+[ext_resource type="FontFile" uid="uid://chuit354v2gmb" path="res://design/fonts/Skranji-Bold.ttf" id="2_brodl"]
+
+[node name="GameOver" type="Node2D" unique_id=1700733619]
+script = ExtResource("1_rggfd")
+
+[node name="Button" type="Button" parent="." unique_id=350041783]
+offset_left = 842.0
+offset_top = 567.0
+offset_right = 1085.0
+offset_bottom = 637.0
+theme_override_fonts/font = ExtResource("2_brodl")
+theme_override_font_sizes/font_size = 32
+text = "Try again"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

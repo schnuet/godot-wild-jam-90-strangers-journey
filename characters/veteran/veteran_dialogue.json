@@ -1,0 +1,28 @@
+{
+	"greeting": {
+		"lines": [
+			"I’ve seen many winters, young one.\n",
+			"More than I would have liked, to speak frankly.",
+			"But one must remain steadfast and endure all the misery and suffering.",
+			"Take the blows as they come, as my old man always used to say.",
+			"Wouldn’t mind traveling with you for a while."
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,veteran"
+		]
+	},
+	"deny": {
+		"lines": [
+			"Then I shall keep working for safety in this lands still.",
+			"And never stop fighting until the end is here.",
+			"action:reject_character,veteran"
+		]
+	}
+}

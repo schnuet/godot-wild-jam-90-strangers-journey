@@ -1,10 +1,27 @@
 [gd_scene format=3 uid="uid://bp1r81t5xiya0"]
 
-[ext_resource type="Script" uid="uid://beouquja3asey" path="res://02_carriage/carriage.gd" id="1_cnnnc"]
+[ext_resource type="Script" uid="uid://beouquja3asey" path="res://02_carriage/02_carriage.gd" id="1_cnnnc"]
 [ext_resource type="PackedScene" uid="uid://cns7ts7nudjt2" path="res://02_carriage/character_cards/CharacterPlace.tscn" id="1_wp2th"]
+[ext_resource type="Texture2D" uid="uid://bkaqqqq2fiynr" path="res://02_carriage/backgrounds/sj_verteilung-hintergrund.jpg" id="2_2xwa8"]
+[ext_resource type="Texture2D" uid="uid://cqk2itb63vv8w" path="res://02_carriage/backgrounds/wagen-von-oben.png" id="2_biuld"]
+[ext_resource type="Theme" uid="uid://p58o4y2jdivt" path="res://ui/theme.tres" id="3_biuld"]
+[ext_resource type="PackedScene" uid="uid://cp7gjhriwk1i" path="res://ui/money/MoneyBag.tscn" id="4_anfsv"]
+[ext_resource type="Texture2D" uid="uid://t8tps84rho3t" path="res://02_carriage/backgrounds/karten_verteilung.png" id="4_btovs"]
+[ext_resource type="Texture2D" uid="uid://vv8uxod5p41u" path="res://02_carriage/backgrounds/karten_wegwerf_hintergrund.png" id="5_btovs"]
+[ext_resource type="Texture2D" uid="uid://gai0t03u7sh2" path="res://02_carriage/backgrounds/wagen-von-oben-6er.png" id="5_kpo53"]
+[ext_resource type="Texture2D" uid="uid://bogt5cvh4nu5u" path="res://02_carriage/backgrounds/wagen-von-oben-4er.png" id="6_xuy1u"]
+[ext_resource type="AudioStream" uid="uid://bsqkhw0q5tk4x" path="res://02_carriage/sounds/Szene-02-Charakter-Aufnehmen.wav" id="11_8pdwq"]
+[ext_resource type="AudioStream" uid="uid://drpofumuyw7kh" path="res://02_carriage/sounds/Szene-02-Charakter-Zurücklegen.wav" id="12_qp0hd"]
+[ext_resource type="AudioStream" uid="uid://co8r7vth51ffg" path="res://02_carriage/sounds/Szene-02-Platzierung-02.wav" id="13_3mall"]
 
 [node name="Carriage" type="Node2D" unique_id=902744758]
 script = ExtResource("1_cnnnc")
+metadata/_edit_lock_ = true
+
+[node name="SjVerteilungHintergrund" type="Sprite2D" parent="." unique_id=865754244]
+texture = ExtResource("2_2xwa8")
+centered = false
+metadata/_edit_lock_ = true
 
 [node name="Control" type="Control" parent="." unique_id=1258426429]
 custom_minimum_size = Vector2(1920, 1080)
@@ -13,68 +30,149 @@ anchors_preset = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 
-[node name="Inside" type="VBoxContainer" parent="Control" unique_id=1319489522]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -345.0
-offset_top = -282.0
-offset_right = 345.0
-offset_bottom = 68.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 50
-alignment = 1
+[node name="WagenVonOben" type="Sprite2D" parent="Control" unique_id=298539367]
+texture = ExtResource("2_biuld")
+centered = false
 
-[node name="TopRow" type="HBoxContainer" parent="Control/Inside" unique_id=843637668]
+[node name="WagenVonOben6Er" type="Sprite2D" parent="Control" unique_id=607201365]
+texture = ExtResource("5_kpo53")
+centered = false
+
+[node name="WagenVonOben4Er" type="Sprite2D" parent="Control" unique_id=929598955]
+texture = ExtResource("6_xuy1u")
+centered = false
+
+[node name="TopRow" type="HBoxContainer" parent="Control" unique_id=843637668]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 138.0
+offset_right = 1394.0
+offset_bottom = 338.0
+theme_override_constants/separation = 24
+alignment = 2
+
+[node name="CharacterPlace" parent="Control/TopRow" unique_id=431486651 instance=ExtResource("1_wp2th")]
 layout_mode = 2
-theme_override_constants/separation = 30
 
-[node name="CharacterPlace" parent="Control/Inside/TopRow" unique_id=431486651 instance=ExtResource("1_wp2th")]
-layout_mode = 2
-
-[node name="CharacterPlace2" parent="Control/Inside/TopRow" unique_id=564001745 instance=ExtResource("1_wp2th")]
+[node name="CharacterPlace2" parent="Control/TopRow" unique_id=564001745 instance=ExtResource("1_wp2th")]
 layout_mode = 2
 seat_number = 1
 
-[node name="CharacterPlace3" parent="Control/Inside/TopRow" unique_id=1677983923 instance=ExtResource("1_wp2th")]
+[node name="CharacterPlace3" parent="Control/TopRow" unique_id=1677983923 instance=ExtResource("1_wp2th")]
 layout_mode = 2
 seat_number = 2
 
-[node name="CharacterPlace4" parent="Control/Inside/TopRow" unique_id=1112970863 instance=ExtResource("1_wp2th")]
+[node name="CharacterPlace4" parent="Control/TopRow" unique_id=1112970863 instance=ExtResource("1_wp2th")]
 layout_mode = 2
 seat_number = 3
 
-[node name="BottomRow" type="HBoxContainer" parent="Control/Inside" unique_id=868049392]
-layout_mode = 2
-theme_override_constants/separation = 30
+[node name="BottomRow" type="HBoxContainer" parent="Control" unique_id=868049392]
+layout_mode = 0
+offset_left = 499.0
+offset_top = 431.0
+offset_right = 1389.0
+offset_bottom = 631.0
+theme_override_constants/separation = 23
+alignment = 2
 
-[node name="CharacterPlace" parent="Control/Inside/BottomRow" unique_id=1501168553 instance=ExtResource("1_wp2th")]
+[node name="CharacterPlace" parent="Control/BottomRow" unique_id=1501168553 instance=ExtResource("1_wp2th")]
 layout_mode = 2
 seat_number = 4
 
-[node name="CharacterPlace2" parent="Control/Inside/BottomRow" unique_id=132594026 instance=ExtResource("1_wp2th")]
+[node name="CharacterPlace2" parent="Control/BottomRow" unique_id=132594026 instance=ExtResource("1_wp2th")]
 layout_mode = 2
 seat_number = 5
 
-[node name="CharacterPlace3" parent="Control/Inside/BottomRow" unique_id=2074513036 instance=ExtResource("1_wp2th")]
+[node name="CharacterPlace3" parent="Control/BottomRow" unique_id=2074513036 instance=ExtResource("1_wp2th")]
 layout_mode = 2
 seat_number = 6
 
-[node name="CharacterPlace4" parent="Control/Inside/BottomRow" unique_id=909978285 instance=ExtResource("1_wp2th")]
+[node name="CharacterPlace4" parent="Control/BottomRow" unique_id=909978285 instance=ExtResource("1_wp2th")]
 layout_mode = 2
 seat_number = 7
 
+[node name="KartenVerteilung" type="Sprite2D" parent="Control" unique_id=330579143]
+texture = ExtResource("4_btovs")
+centered = false
+metadata/_edit_lock_ = true
+
 [node name="Outside" type="Control" parent="Control" unique_id=2081251498]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -182.0
-offset_bottom = -32.0
+offset_top = -267.0
+offset_bottom = -67.0
 grow_horizontal = 2
 grow_vertical = 0
+
+[node name="RejectedBackground" type="Sprite2D" parent="Control" unique_id=1087477912]
+texture = ExtResource("5_btovs")
+centered = false
+
+[node name="Label" type="Label" parent="Control/RejectedBackground" unique_id=2087172316]
+offset_left = 92.0
+offset_top = 72.0
+offset_right = 321.0
+offset_bottom = 135.0
+theme = ExtResource("3_biuld")
+theme_override_colors/font_color = Color(0.2627451, 0.29411766, 0.42352942, 1)
+theme_override_font_sizes/font_size = 48
+text = "Leave behind"
+
+[node name="Rejected" type="Control" parent="Control" unique_id=265068745]
+anchors_preset = 0
+offset_left = 36.0
+offset_top = 62.0
+offset_right = 379.0
+offset_bottom = 817.0
+
+[node name="Front" type="Control" parent="." unique_id=831229791]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+metadata/_edit_lock_ = true
+
+[node name="NextButton" type="Button" parent="Front" unique_id=959610766]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -374.0
+offset_top = -123.0
+offset_right = -64.0
+offset_bottom = -55.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("3_biuld")
+text = "Plan Trip"
+
+[node name="MoneyBag" parent="." unique_id=1343773189 instance=ExtResource("4_anfsv")]
+offset_left = 24.0
+offset_top = 19.0
+offset_right = 24.0
+offset_bottom = 19.0
+
+[node name="Fade" type="ColorRect" parent="." unique_id=1047824616]
+visible = false
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="sound_pick" type="AudioStreamPlayer" parent="." unique_id=894915196]
+stream = ExtResource("11_8pdwq")
+
+[node name="sound_return" type="AudioStreamPlayer" parent="." unique_id=2096218116]
+stream = ExtResource("12_qp0hd")
+
+[node name="sound_place" type="AudioStreamPlayer" parent="." unique_id=1389949768]
+stream = ExtResource("13_3mall")

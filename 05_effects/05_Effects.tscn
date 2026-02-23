@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dfdnhrbsat167"]
+
+[ext_resource type="PackedScene" uid="uid://bp1r81t5xiya0" path="res://02_carriage/2_Carriage.tscn" id="1_07mvy"]
+[ext_resource type="Script" uid="uid://dctoaip2w42i6" path="res://05_effects/05_effects.gd" id="1_e73qo"]
+[ext_resource type="FontFile" uid="uid://chuit354v2gmb" path="res://design/fonts/Skranji-Bold.ttf" id="3_p8dlk"]
+
+[node name="Effects" type="Node2D" unique_id=1713137008]
+script = ExtResource("1_e73qo")
+
+[node name="Carriage" parent="." unique_id=902744758 instance=ExtResource("1_07mvy")]
+non_interactive = true
+
+[node name="Front" type="Control" parent="." unique_id=2085042506]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+metadata/_edit_lock_ = true
+
+[node name="NextButton" type="Button" parent="Front" unique_id=1909443106]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -363.0
+offset_top = -118.0
+offset_right = -71.0
+offset_bottom = -46.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_p8dlk")
+theme_override_font_sizes/font_size = 32
+text = "Enter camp"
+
+[connection signal="pressed" from="Front/NextButton" to="." method="_on_next_button_pressed"]

@@ -1,0 +1,26 @@
+{
+	"greeting": {
+		"lines": [
+			"I smell fear. But I must not be afraid. Fear is the mind killer.",
+			"But the smell of fear isn't coming from you. It's the horses!",
+			"Well, this is interesting...",
+			"Horseman, I will join your group!"
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Leave them for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"...",
+			"action:add_character,bear"
+		]
+	},
+	"deny": {
+		"lines": [
+			"...",
+			"action:reject_character,bear"
+		]
+	}
+}

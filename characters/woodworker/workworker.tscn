@@ -1,0 +1,235 @@
+[gd_scene format=3 uid="uid://mniyko0vurdi"]
+
+[ext_resource type="Script" uid="uid://bkxw1bkkps2lw" path="res://characters/mercenary/mercenary.gd" id="1_8x6u8"]
+[ext_resource type="JSON" path="res://characters/woodworker/workworker_dialogue.json" id="2_vbxfb"]
+[ext_resource type="Texture2D" uid="uid://dp02hmvksggou" path="res://design/shadow.png" id="3_6db3k"]
+[ext_resource type="Texture2D" uid="uid://7vrn1ntnxqnl" path="res://characters/animations/SB_handwerker/SB_handwerker_00000.png" id="4_ymvsw"]
+[ext_resource type="Texture2D" uid="uid://cx3aieyv1tdb5" path="res://characters/animations/SB_handwerker/SB_handwerker_00001.png" id="5_isqti"]
+[ext_resource type="Texture2D" uid="uid://drsto51mm2hys" path="res://characters/animations/SB_handwerker/SB_handwerker_00002.png" id="6_tx07p"]
+[ext_resource type="Texture2D" uid="uid://c0upoaokdcnap" path="res://characters/animations/SB_handwerker/SB_handwerker_00003.png" id="7_jxjhk"]
+[ext_resource type="Texture2D" uid="uid://b6cbswfirq75" path="res://characters/animations/SB_handwerker/SB_handwerker_00004.png" id="8_7ghu3"]
+[ext_resource type="Texture2D" uid="uid://ct520k80n5saf" path="res://characters/animations/SB_handwerker/SB_handwerker_00005.png" id="9_u53v4"]
+[ext_resource type="Texture2D" uid="uid://d2116aqxchs8i" path="res://characters/animations/SB_handwerker/SB_handwerker_00006.png" id="10_0towb"]
+[ext_resource type="Texture2D" uid="uid://dhdq7ojnyd02n" path="res://characters/animations/SB_handwerker/SB_handwerker_00007.png" id="11_hee3r"]
+[ext_resource type="Texture2D" uid="uid://bqaq4q2re2apn" path="res://characters/animations/SB_handwerker/SB_handwerker_00008.png" id="12_okclg"]
+[ext_resource type="Texture2D" uid="uid://m8j8q5fj3ao4" path="res://characters/animations/SB_handwerker/SB_handwerker_00009.png" id="13_tgp5b"]
+[ext_resource type="Texture2D" uid="uid://cybqhk6r4c18m" path="res://characters/animations/SB_handwerker/SB_handwerker_00010.png" id="14_6mami"]
+[ext_resource type="Texture2D" uid="uid://smr0dgnlnjrt" path="res://characters/animations/SB_handwerker/SB_handwerker_00011.png" id="15_cu8fw"]
+[ext_resource type="Texture2D" uid="uid://bm6md4sl4wo5s" path="res://characters/animations/SB_handwerker/SB_handwerker_00012.png" id="16_suwni"]
+[ext_resource type="Texture2D" uid="uid://ca666trhss3xx" path="res://characters/animations/SB_handwerker/SB_handwerker_00013.png" id="17_ltwjs"]
+[ext_resource type="Texture2D" uid="uid://boo4dsrbrnfyg" path="res://characters/animations/SB_handwerker/SB_handwerker_00014.png" id="18_u8w6d"]
+[ext_resource type="Texture2D" uid="uid://twyva0g2lrtr" path="res://characters/animations/SB_handwerker/SB_handwerker_00015.png" id="19_dptnu"]
+[ext_resource type="Texture2D" uid="uid://8ebl4dxm8l81" path="res://characters/animations/SB_handwerker/SB_handwerker_00016.png" id="20_ekil7"]
+[ext_resource type="Texture2D" uid="uid://cn6qjrd71qqko" path="res://characters/animations/SB_handwerker/SB_handwerker_00017.png" id="21_wn70c"]
+[ext_resource type="Texture2D" uid="uid://djjnsl253acq6" path="res://characters/animations/SB_handwerker/SB_handwerker_00018.png" id="22_4r3s7"]
+[ext_resource type="Texture2D" uid="uid://bmtmjgec1pnk4" path="res://characters/animations/SB_handwerker/SB_handwerker_00019.png" id="23_k70n2"]
+[ext_resource type="Texture2D" uid="uid://c55rn1kkgig6u" path="res://characters/animations/SB_handwerker/SB_handwerker_00020.png" id="24_dr27u"]
+[ext_resource type="Texture2D" uid="uid://daimevckc2g4d" path="res://characters/animations/SB_handwerker/SB_handwerker_00021.png" id="25_pcw2e"]
+[ext_resource type="Texture2D" uid="uid://711mn4eddhwt" path="res://characters/animations/SB_handwerker/SB_handwerker_00022.png" id="26_6hdt1"]
+[ext_resource type="Texture2D" uid="uid://x5aniw8rjl3t" path="res://characters/animations/SB_handwerker/SB_handwerker_00023.png" id="27_5qcmm"]
+[ext_resource type="Texture2D" uid="uid://dsnt3cqsgeu5f" path="res://characters/animations/SB_handwerker/SB_handwerker_00024.png" id="28_53l5d"]
+[ext_resource type="Texture2D" uid="uid://wmj24f55k8im" path="res://characters/animations/SB_handwerker/SB_handwerker_00025.png" id="29_q6uj8"]
+[ext_resource type="Texture2D" uid="uid://heu2ofkv6j5g" path="res://characters/animations/SB_handwerker/SB_handwerker_00026.png" id="30_8nr3q"]
+[ext_resource type="Texture2D" uid="uid://cg3bra8g4iped" path="res://characters/animations/SB_handwerker/SB_handwerker_00027.png" id="31_m5o5r"]
+[ext_resource type="Texture2D" uid="uid://d0i22n4ufth8x" path="res://characters/animations/SB_handwerker/SB_handwerker_00028.png" id="32_dxux4"]
+[ext_resource type="Texture2D" uid="uid://f4go3jwbbh6o" path="res://characters/animations/SB_handwerker/SB_handwerker_00029.png" id="33_ns1tp"]
+[ext_resource type="Texture2D" uid="uid://c1nci75xw4acj" path="res://characters/animations/SB_handwerker/SB_handwerker_00030.png" id="34_3h2wn"]
+[ext_resource type="Texture2D" uid="uid://5s6blk82yv6n" path="res://characters/animations/SB_handwerker/SB_handwerker_00031.png" id="35_im2gw"]
+[ext_resource type="Texture2D" uid="uid://bwekj6l5skb0c" path="res://characters/animations/SB_handwerker/SB_handwerker_00032.png" id="36_liu7u"]
+[ext_resource type="Texture2D" uid="uid://1wn1lb4wlpdm" path="res://characters/animations/SB_handwerker/SB_handwerker_00033.png" id="37_8wvh3"]
+[ext_resource type="Texture2D" uid="uid://68extob5jce" path="res://characters/animations/SB_handwerker/SB_handwerker_00034.png" id="38_1fxx8"]
+[ext_resource type="Texture2D" uid="uid://c2v1bhmivpl66" path="res://characters/animations/SB_handwerker/SB_handwerker_00035.png" id="39_hml06"]
+[ext_resource type="Texture2D" uid="uid://cakbpwjakwx0p" path="res://characters/animations/SB_handwerker/SB_handwerker_00036.png" id="40_uqdx1"]
+[ext_resource type="Texture2D" uid="uid://d307irxhwb4nc" path="res://characters/animations/SB_handwerker/SB_handwerker_00037.png" id="41_wfjlk"]
+[ext_resource type="Texture2D" uid="uid://85ggx76ul2pw" path="res://characters/animations/SB_handwerker/SB_handwerker_00038.png" id="42_bt4pc"]
+[ext_resource type="Texture2D" uid="uid://bf8chxoqndwch" path="res://characters/animations/SB_handwerker/SB_handwerker_00039.png" id="43_caldg"]
+[ext_resource type="Texture2D" uid="uid://cmpunu604b57b" path="res://characters/animations/SB_handwerker/SB_handwerker_00040.png" id="44_nkrta"]
+[ext_resource type="Texture2D" uid="uid://b8f3sn4gwfoup" path="res://characters/animations/SB_handwerker/SB_handwerker_00041.png" id="45_dh8k7"]
+[ext_resource type="Texture2D" uid="uid://byfalxxqtaqqv" path="res://characters/animations/SB_handwerker/SB_handwerker_00042.png" id="46_arg60"]
+[ext_resource type="Texture2D" uid="uid://bnd24gmf05xj8" path="res://characters/animations/SB_handwerker/SB_handwerker_00043.png" id="47_wms5b"]
+[ext_resource type="Texture2D" uid="uid://b8gf3kle62jhf" path="res://characters/animations/SB_handwerker/SB_handwerker_00044.png" id="48_pyp7v"]
+[ext_resource type="Texture2D" uid="uid://bky7w4hyy5cw8" path="res://characters/animations/SB_handwerker/SB_handwerker_00045.png" id="49_nbwnq"]
+[ext_resource type="Texture2D" uid="uid://c0731usmllnys" path="res://characters/animations/SB_handwerker/SB_handwerker_00046.png" id="50_hem50"]
+[ext_resource type="Texture2D" uid="uid://bdh5p18ob7fqr" path="res://characters/animations/SB_handwerker/SB_handwerker_00047.png" id="51_c3n8n"]
+[ext_resource type="Texture2D" uid="uid://dxcsl22fplf80" path="res://characters/animations/SB_handwerker/SB_handwerker_00048.png" id="52_r5lwe"]
+[ext_resource type="Texture2D" uid="uid://kr2sjt72kn6t" path="res://characters/animations/SB_handwerker/SB_handwerker_00049.png" id="53_0mo0l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xwmey"]
+size = Vector2(192, 411)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0bfiw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ymvsw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_isqti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tx07p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jxjhk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7ghu3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_u53v4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_0towb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_hee3r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_okclg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_tgp5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6mami")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_cu8fw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_suwni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ltwjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_u8w6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_dptnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ekil7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wn70c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_4r3s7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_k70n2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_dr27u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_pcw2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_6hdt1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_5qcmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_53l5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_q6uj8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_8nr3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_m5o5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_dxux4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ns1tp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_3h2wn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_im2gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_liu7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_8wvh3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_1fxx8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_hml06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_uqdx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_wfjlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_bt4pc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_caldg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_nkrta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_dh8k7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_arg60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_wms5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_pyp7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_nbwnq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_hem50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_c3n8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_r5lwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_0mo0l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[node name="Woodworker" type="Area2D" unique_id=1413212771]
+script = ExtResource("1_8x6u8")
+character_name = "woodworker"
+dialogue_options = ExtResource("2_vbxfb")
+metadata/_custom_type_script = "uid://c4v5w4emtjff6"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=523519374]
+position = Vector2(0, -205.5)
+shape = SubResource("RectangleShape2D_xwmey")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=455409753]
+position = Vector2(0, 13)
+scale = Vector2(0.383, 0.316)
+texture = ExtResource("3_6db3k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=233741170]
+position = Vector2(0, -213)
+sprite_frames = SubResource("SpriteFrames_0bfiw")

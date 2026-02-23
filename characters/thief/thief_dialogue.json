@@ -1,0 +1,27 @@
+{
+	"greeting": {
+		"lines": [
+			"One must know how to get by in this nasty world.",
+			"I have already forgotten more than you will ever learn.",
+			"But I’ll survive, you’ll see.",
+			"I know a few tricks and am, shall we say, extremely nimble.",
+			"But do not enquire about my secrets. They shall be mine and mine alone."
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,thief"
+		]
+	},
+	"deny": {
+		"lines": [
+			"I will find my way around. May you find luck without my skills.",
+			"action:reject_character,thief"
+		]
+	}
+}

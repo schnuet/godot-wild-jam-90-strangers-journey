@@ -1,0 +1,26 @@
+{
+	"greeting": {
+		"lines": [
+			"Well, well my dear friend, look at you!",
+			"So radiant in your cute costume and what about those magnificent horses of yours!",
+			"Everything seems perfect, alas, there is one thing missing in your marvelous companionship:",
+			"Some music to lift one’s spirits, up, up and in the air, my friend. Well then, I’m at your service!",
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,bard"
+		]
+	},
+	"deny": {
+		"lines": [
+			"I can tell that you will miss my music. But alas, so be it then.",
+			"action:reject_character,bard"
+		]
+	}
+}

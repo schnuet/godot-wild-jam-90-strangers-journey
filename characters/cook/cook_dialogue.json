@@ -1,0 +1,35 @@
+{
+	"greeting": {
+		"lines": [
+			"Your company appears to be hungry, dear sir.",
+			"Allow me to remedy this by preparing an exquisite meal for you.",
+			"For a certain fee, of course. It shall be no detriment to you.",
+		],
+		"options": [
+			["Buy a meal for the hungry passengers (200 Gold)", "accept"],
+			["Deny the request", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"It will give them newfound strength and please their souls.",
+			"action:accept_meal"
+		]
+	},
+	"deny": {
+		"lines": [
+			"No money for food means bad times are ahead for you.",
+			"action:reject_meal"
+		]
+	},
+	"no_money": {
+		"lines": [
+			"I can only provide for your hunger if you provide for mine. Your gold doesn't pay my expenses."
+		]
+	},
+	"done": {
+		"lines": [
+			"Your passengers are now fed and should be able to travel with increased strength."
+		]
+	}
+}

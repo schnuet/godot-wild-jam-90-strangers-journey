@@ -1,0 +1,267 @@
+[gd_scene format=3 uid="uid://bpsw2leoo0chj"]
+
+[ext_resource type="Script" uid="uid://bkxw1bkkps2lw" path="res://characters/mercenary/mercenary.gd" id="1_vtcfk"]
+[ext_resource type="JSON" path="res://characters/thief/thief_dialogue.json" id="2_jd8ro"]
+[ext_resource type="Texture2D" uid="uid://dp02hmvksggou" path="res://design/shadow.png" id="3_mcffb"]
+[ext_resource type="Texture2D" uid="uid://dol0g3uti40cd" path="res://characters/animations/SB_dieb/SB_dieb_00000.png" id="4_1tyk6"]
+[ext_resource type="Texture2D" uid="uid://bg3vglummfpim" path="res://characters/animations/SB_dieb/SB_dieb_00001.png" id="5_n6twb"]
+[ext_resource type="Texture2D" uid="uid://d5008dk217mo" path="res://characters/animations/SB_dieb/SB_dieb_00002.png" id="6_6y06f"]
+[ext_resource type="Texture2D" uid="uid://dx6f1m3oio4ln" path="res://characters/animations/SB_dieb/SB_dieb_00003.png" id="7_p2fji"]
+[ext_resource type="Texture2D" uid="uid://c18pcgg1v6dhw" path="res://characters/animations/SB_dieb/SB_dieb_00004.png" id="8_10iut"]
+[ext_resource type="Texture2D" uid="uid://dj66acpkvhjp6" path="res://characters/animations/SB_dieb/SB_dieb_00005.png" id="9_26xyc"]
+[ext_resource type="Texture2D" uid="uid://dvfqb8350gfhp" path="res://characters/animations/SB_dieb/SB_dieb_00006.png" id="10_1tdmd"]
+[ext_resource type="Texture2D" uid="uid://q8dk5ia8n3ov" path="res://characters/animations/SB_dieb/SB_dieb_00007.png" id="11_htprd"]
+[ext_resource type="Texture2D" uid="uid://cqc7ub8ps301y" path="res://characters/animations/SB_dieb/SB_dieb_00008.png" id="12_d3gfh"]
+[ext_resource type="Texture2D" uid="uid://coculrg4qehyd" path="res://characters/animations/SB_dieb/SB_dieb_00009.png" id="13_hcpi5"]
+[ext_resource type="Texture2D" uid="uid://bgstu414x70y3" path="res://characters/animations/SB_dieb/SB_dieb_00010.png" id="14_orpu3"]
+[ext_resource type="Texture2D" uid="uid://c42r06ni41lwl" path="res://characters/animations/SB_dieb/SB_dieb_00011.png" id="15_1vwup"]
+[ext_resource type="Texture2D" uid="uid://ce24dirlasyso" path="res://characters/animations/SB_dieb/SB_dieb_00012.png" id="16_wy2fo"]
+[ext_resource type="Texture2D" uid="uid://cly6504a1mco2" path="res://characters/animations/SB_dieb/SB_dieb_00013.png" id="17_8s336"]
+[ext_resource type="Texture2D" uid="uid://ekgowtod1ury" path="res://characters/animations/SB_dieb/SB_dieb_00014.png" id="18_qpmfb"]
+[ext_resource type="Texture2D" uid="uid://bfu1q2rvpo6qu" path="res://characters/animations/SB_dieb/SB_dieb_00015.png" id="19_wqihk"]
+[ext_resource type="Texture2D" uid="uid://7xkmr4ioav15" path="res://characters/animations/SB_dieb/SB_dieb_00016.png" id="20_qqno8"]
+[ext_resource type="Texture2D" uid="uid://di8s65ky7noxf" path="res://characters/animations/SB_dieb/SB_dieb_00017.png" id="21_qk86k"]
+[ext_resource type="Texture2D" uid="uid://dowevbjataxvo" path="res://characters/animations/SB_dieb/SB_dieb_00018.png" id="22_ubo65"]
+[ext_resource type="Texture2D" uid="uid://cpa4cswy1e3u2" path="res://characters/animations/SB_dieb/SB_dieb_00019.png" id="23_vb0pa"]
+[ext_resource type="Texture2D" uid="uid://cnsg36yll1x18" path="res://characters/animations/SB_dieb/SB_dieb_00020.png" id="24_fwotb"]
+[ext_resource type="Texture2D" uid="uid://c82jeau2xb2er" path="res://characters/animations/SB_dieb/SB_dieb_00021.png" id="25_qvnnu"]
+[ext_resource type="Texture2D" uid="uid://eimdw3kv0jib" path="res://characters/animations/SB_dieb/SB_dieb_00022.png" id="26_yl43k"]
+[ext_resource type="Texture2D" uid="uid://ceskas6sm0nq7" path="res://characters/animations/SB_dieb/SB_dieb_00023.png" id="27_5h67s"]
+[ext_resource type="Texture2D" uid="uid://cgucvbfqnrftl" path="res://characters/animations/SB_dieb/SB_dieb_00024.png" id="28_bm8mr"]
+[ext_resource type="Texture2D" uid="uid://cs64ehtt10wqh" path="res://characters/animations/SB_dieb/SB_dieb_00025.png" id="29_3h5hq"]
+[ext_resource type="Texture2D" uid="uid://dytfpl2rioa7a" path="res://characters/animations/SB_dieb/SB_dieb_00026.png" id="30_4kbha"]
+[ext_resource type="Texture2D" uid="uid://bexn0bsguqlct" path="res://characters/animations/SB_dieb/SB_dieb_00027.png" id="31_ycyy3"]
+[ext_resource type="Texture2D" uid="uid://bs7k3ci6c1u14" path="res://characters/animations/SB_dieb/SB_dieb_00028.png" id="32_qdluc"]
+[ext_resource type="Texture2D" uid="uid://rae6mtyh6tlh" path="res://characters/animations/SB_dieb/SB_dieb_00029.png" id="33_rhl45"]
+[ext_resource type="Texture2D" uid="uid://cvorf1pfjyv0d" path="res://characters/animations/SB_dieb/SB_dieb_00030.png" id="34_5lrut"]
+[ext_resource type="Texture2D" uid="uid://brqb0a1mwgfvl" path="res://characters/animations/SB_dieb/SB_dieb_00031.png" id="35_8c2gi"]
+[ext_resource type="Texture2D" uid="uid://bqw2xw5i2j6k5" path="res://characters/animations/SB_dieb/SB_dieb_00032.png" id="36_jgfdp"]
+[ext_resource type="Texture2D" uid="uid://go7cglo65msk" path="res://characters/animations/SB_dieb/SB_dieb_00033.png" id="37_oc8cv"]
+[ext_resource type="Texture2D" uid="uid://cr7h8twvlj11" path="res://characters/animations/SB_dieb/SB_dieb_00034.png" id="38_p8jyk"]
+[ext_resource type="Texture2D" uid="uid://p3cmhn87m8lb" path="res://characters/animations/SB_dieb/SB_dieb_00035.png" id="39_qf57i"]
+[ext_resource type="Texture2D" uid="uid://bxxmckq3vqwpt" path="res://characters/animations/SB_dieb/SB_dieb_00036.png" id="40_d1mhj"]
+[ext_resource type="Texture2D" uid="uid://cdmpy0rx1ukcj" path="res://characters/animations/SB_dieb/SB_dieb_00037.png" id="41_tt11m"]
+[ext_resource type="Texture2D" uid="uid://tjewgjt14jww" path="res://characters/animations/SB_dieb/SB_dieb_00038.png" id="42_wvsdd"]
+[ext_resource type="Texture2D" uid="uid://cubhbstoqxuy1" path="res://characters/animations/SB_dieb/SB_dieb_00039.png" id="43_8v3os"]
+[ext_resource type="Texture2D" uid="uid://cdt4yc4foejdh" path="res://characters/animations/SB_dieb/SB_dieb_00040.png" id="44_ia1li"]
+[ext_resource type="Texture2D" uid="uid://c5fnxi8peik53" path="res://characters/animations/SB_dieb/SB_dieb_00041.png" id="45_kicu6"]
+[ext_resource type="Texture2D" uid="uid://nj7jia3rfp2b" path="res://characters/animations/SB_dieb/SB_dieb_00042.png" id="46_rtnff"]
+[ext_resource type="Texture2D" uid="uid://cwr42b8d5rq5g" path="res://characters/animations/SB_dieb/SB_dieb_00043.png" id="47_onmc1"]
+[ext_resource type="Texture2D" uid="uid://c6nxyqkovo6oa" path="res://characters/animations/SB_dieb/SB_dieb_00044.png" id="48_23yy3"]
+[ext_resource type="Texture2D" uid="uid://b36ju5d0pk2vr" path="res://characters/animations/SB_dieb/SB_dieb_00045.png" id="49_ehciu"]
+[ext_resource type="Texture2D" uid="uid://dtpu3w30lslir" path="res://characters/animations/SB_dieb/SB_dieb_00046.png" id="50_jcbrw"]
+[ext_resource type="Texture2D" uid="uid://cyw3wdk3y6nps" path="res://characters/animations/SB_dieb/SB_dieb_00047.png" id="51_lsocs"]
+[ext_resource type="Texture2D" uid="uid://bwptll075jeu6" path="res://characters/animations/SB_dieb/SB_dieb_00048.png" id="52_4wy7o"]
+[ext_resource type="Texture2D" uid="uid://bch8gof2rehox" path="res://characters/animations/SB_dieb/SB_dieb_00049.png" id="53_eaohb"]
+[ext_resource type="Texture2D" uid="uid://3f7on20cxlk2" path="res://characters/animations/SB_dieb/SB_dieb_00050.png" id="54_me1lo"]
+[ext_resource type="Texture2D" uid="uid://dm4mfkw47sh8r" path="res://characters/animations/SB_dieb/SB_dieb_00051.png" id="55_mq3xh"]
+[ext_resource type="Texture2D" uid="uid://bu3fcqaxyg1hx" path="res://characters/animations/SB_dieb/SB_dieb_00052.png" id="56_eyiy8"]
+[ext_resource type="Texture2D" uid="uid://bmi8xfsfn6mmk" path="res://characters/animations/SB_dieb/SB_dieb_00053.png" id="57_0hpf8"]
+[ext_resource type="Texture2D" uid="uid://bxhw0bbtd4k1n" path="res://characters/animations/SB_dieb/SB_dieb_00054.png" id="58_ns4qc"]
+[ext_resource type="Texture2D" uid="uid://cp0xsch660iyo" path="res://characters/animations/SB_dieb/SB_dieb_00055.png" id="59_6kj43"]
+[ext_resource type="Texture2D" uid="uid://dcudj3esedyay" path="res://characters/animations/SB_dieb/SB_dieb_00056.png" id="60_mt00i"]
+[ext_resource type="Texture2D" uid="uid://bx0u36hl6swf2" path="res://characters/animations/SB_dieb/SB_dieb_00057.png" id="61_4lmbi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xwmey"]
+size = Vector2(150, 409)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mcffb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_1tyk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_n6twb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6y06f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_p2fji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_10iut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_26xyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1tdmd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_htprd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_d3gfh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hcpi5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_orpu3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1vwup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_wy2fo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_8s336")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qpmfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wqihk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_qqno8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_qk86k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ubo65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_vb0pa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_fwotb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_qvnnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_yl43k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_5h67s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_bm8mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_3h5hq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_4kbha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ycyy3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_qdluc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_rhl45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_5lrut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_8c2gi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_jgfdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_oc8cv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_p8jyk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_qf57i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_d1mhj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_tt11m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_wvsdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_8v3os")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_ia1li")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_kicu6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_rtnff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_onmc1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_23yy3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_ehciu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_jcbrw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_lsocs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_4wy7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_eaohb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_me1lo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_mq3xh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_eyiy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_0hpf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_ns4qc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_6kj43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_mt00i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_4lmbi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[node name="Thief" type="Area2D" unique_id=1413212771]
+script = ExtResource("1_vtcfk")
+character_name = "thief"
+dialogue_options = ExtResource("2_jd8ro")
+metadata/_custom_type_script = "uid://c4v5w4emtjff6"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=523519374]
+position = Vector2(0, -204.5)
+shape = SubResource("RectangleShape2D_xwmey")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=1492222582]
+position = Vector2(0, 13)
+scale = Vector2(0.383, 0.316)
+texture = ExtResource("3_mcffb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=18889465]
+position = Vector2(0, -208)
+sprite_frames = SubResource("SpriteFrames_mcffb")

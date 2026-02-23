@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://cns7ts7nudjt2"]
 
 [ext_resource type="Script" uid="uid://cmxdw8g4pr6o3" path="res://02_carriage/character_cards/character_place.gd" id="1_jpjvo"]
+[ext_resource type="Texture2D" uid="uid://dp02hmvksggou" path="res://design/shadow.png" id="2_270vw"]
 
 [node name="CharacterPlace" type="Control" unique_id=431486651 groups=["character_place"]]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 3
 anchors_preset = 0
 offset_right = 150.0
@@ -11,6 +12,7 @@ offset_bottom = 150.0
 script = ExtResource("1_jpjvo")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1650690975]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,3 +20,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.8740001, 0.92, 0, 0.3372549)
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=460608126]
+visible = false
+modulate = Color(16.557436, 17.53024, 18.892157, 1)
+position = Vector2(100.00001, 101)
+scale = Vector2(0.40799996, 0.72904897)
+texture = ExtResource("2_270vw")

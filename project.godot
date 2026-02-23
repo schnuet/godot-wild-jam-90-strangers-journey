@@ -11,14 +11,18 @@ config_version=5
 [application]
 
 config/name="Strangers' Journey"
-run/main_scene="uid://vum2yxlh27gl"
+run/main_scene="uid://dau4mq3b6puc1"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://icon.svg"
 
 [autoload]
 
 DialogueOverlay="*uid://bww1yup1rqvwx"
 Game="*uid://jcctv4xt7de5"
+SceneLoader="*uid://cpehcs7n5c62p"
+StoryOverlay="*uid://cxcvxaf1qdojv"
+MusicPlayer="*uid://ddxrls0igr1gq"
 
 [display]
 
@@ -27,10 +31,15 @@ window/size/viewport_height=1080
 window/size/mode=3
 window/stretch/mode="viewport"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/maaacks_scene_loader/plugin.cfg")
+
 [global_group]
 
 character_card=""
 character_place=""
+camp_marker=""
 
 [input]
 
@@ -43,6 +52,10 @@ ui_accept={
 ]
 }
 
+[maaacks_scene_loader]
+
+disable_update_check=false
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -52,3 +65,4 @@ ui_accept={
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

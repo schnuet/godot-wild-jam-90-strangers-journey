@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://dla3k6ikpqqjq"]
+
+[ext_resource type="Script" uid="uid://bkxw1bkkps2lw" path="res://characters/mercenary/mercenary.gd" id="1_a4wpy"]
+[ext_resource type="JSON" path="res://characters/nervous_man/nervous_man_dialogue.json" id="2_gutwj"]
+[ext_resource type="Texture2D" uid="uid://dp02hmvksggou" path="res://design/shadow.png" id="3_x2tvr"]
+[ext_resource type="Texture2D" uid="uid://uj8u5bh4n86n" path="res://characters/animations/SB_nervös/SB_nervös_00000.png" id="4_evaae"]
+[ext_resource type="Texture2D" uid="uid://clmj031kcbu41" path="res://characters/animations/SB_nervös/SB_nervös_00001.png" id="5_3tyxg"]
+[ext_resource type="Texture2D" uid="uid://4f1jy6elbvdx" path="res://characters/animations/SB_nervös/SB_nervös_00002.png" id="6_pyt4m"]
+[ext_resource type="Texture2D" uid="uid://b4cq6pjn40m2i" path="res://characters/animations/SB_nervös/SB_nervös_00003.png" id="7_f1d8x"]
+[ext_resource type="Texture2D" uid="uid://clo10qjct5q6p" path="res://characters/animations/SB_nervös/SB_nervös_00004.png" id="8_st4am"]
+[ext_resource type="Texture2D" uid="uid://bw2prsooojc11" path="res://characters/animations/SB_nervös/SB_nervös_00005.png" id="9_s7gv6"]
+[ext_resource type="Texture2D" uid="uid://db4am8exrcnjk" path="res://characters/animations/SB_nervös/SB_nervös_00006.png" id="10_pnypn"]
+[ext_resource type="Texture2D" uid="uid://kxxf2wqfhwf2" path="res://characters/animations/SB_nervös/SB_nervös_00007.png" id="11_dv31r"]
+[ext_resource type="Texture2D" uid="uid://t4kwft5gic2k" path="res://characters/animations/SB_nervös/SB_nervös_00008.png" id="12_8nn8d"]
+[ext_resource type="Texture2D" uid="uid://bpw0gp47b23vg" path="res://characters/animations/SB_nervös/SB_nervös_00009.png" id="13_bvi43"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xwmey"]
+size = Vector2(163, 366)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x2tvr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_evaae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3tyxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pyt4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_f1d8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_st4am")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_s7gv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pnypn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dv31r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_8nn8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_bvi43")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[node name="NervousMan" type="Area2D" unique_id=1413212771]
+script = ExtResource("1_a4wpy")
+character_name = "nervous_man"
+dialogue_options = ExtResource("2_gutwj")
+metadata/_custom_type_script = "uid://c4v5w4emtjff6"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=523519374]
+position = Vector2(-6.5, -183)
+shape = SubResource("RectangleShape2D_xwmey")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=1746088997]
+position = Vector2(0, 13)
+scale = Vector2(0.35200003, 0.28399998)
+texture = ExtResource("3_x2tvr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1546823500]
+position = Vector2(0, -203)
+sprite_frames = SubResource("SpriteFrames_x2tvr")

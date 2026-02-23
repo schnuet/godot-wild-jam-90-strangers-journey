@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://beb35oolecawb"]
+
+[ext_resource type="Texture2D" uid="uid://dcty1sg3sq8q" path="res://scenes_outgame/end-screen.jpg" id="1_61ccd"]
+[ext_resource type="Script" uid="uid://d1ogrpll0jgqe" path="res://scenes_outgame/end_screen.gd" id="1_hs41g"]
+
+[node name="EndScreen" type="Node2D" unique_id=1079650482]
+script = ExtResource("1_hs41g")
+
+[node name="EndScreen" type="Sprite2D" parent="." unique_id=2018939295]
+texture = ExtResource("1_61ccd")
+centered = false
+
+[node name="Fade" type="ColorRect" parent="." unique_id=1289944499]
+visible = false
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

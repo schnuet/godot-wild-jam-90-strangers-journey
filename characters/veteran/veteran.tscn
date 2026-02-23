@@ -1,0 +1,235 @@
+[gd_scene format=3 uid="uid://dm7ubvt016al0"]
+
+[ext_resource type="Script" uid="uid://bkxw1bkkps2lw" path="res://characters/mercenary/mercenary.gd" id="1_bokvh"]
+[ext_resource type="JSON" path="res://characters/veteran/veteran_dialogue.json" id="2_xt485"]
+[ext_resource type="Texture2D" uid="uid://dp02hmvksggou" path="res://design/shadow.png" id="3_3km80"]
+[ext_resource type="Texture2D" uid="uid://bsrpn6w768rjb" path="res://characters/animations/SB_veteran/SB_veteran_00000.png" id="4_0a2s0"]
+[ext_resource type="Texture2D" uid="uid://3adh0gmdcwrj" path="res://characters/animations/SB_veteran/SB_veteran_00001.png" id="5_hog6t"]
+[ext_resource type="Texture2D" uid="uid://dnd62m1n7ctpq" path="res://characters/animations/SB_veteran/SB_veteran_00002.png" id="6_km7ge"]
+[ext_resource type="Texture2D" uid="uid://c6hwyis41a74b" path="res://characters/animations/SB_veteran/SB_veteran_00003.png" id="7_52kru"]
+[ext_resource type="Texture2D" uid="uid://dbyuriw6m4l8g" path="res://characters/animations/SB_veteran/SB_veteran_00004.png" id="8_1ej2o"]
+[ext_resource type="Texture2D" uid="uid://2pln80wf4s0" path="res://characters/animations/SB_veteran/SB_veteran_00005.png" id="9_6aniq"]
+[ext_resource type="Texture2D" uid="uid://cp2dcvxkqun11" path="res://characters/animations/SB_veteran/SB_veteran_00006.png" id="10_f3heb"]
+[ext_resource type="Texture2D" uid="uid://m7rawyfxl8jn" path="res://characters/animations/SB_veteran/SB_veteran_00007.png" id="11_mk08c"]
+[ext_resource type="Texture2D" uid="uid://djwd62cjyqugv" path="res://characters/animations/SB_veteran/SB_veteran_00008.png" id="12_glyti"]
+[ext_resource type="Texture2D" uid="uid://cdqiq5pfqain0" path="res://characters/animations/SB_veteran/SB_veteran_00009.png" id="13_w7kic"]
+[ext_resource type="Texture2D" uid="uid://i1ovljujm5e2" path="res://characters/animations/SB_veteran/SB_veteran_00010.png" id="14_yposb"]
+[ext_resource type="Texture2D" uid="uid://dsjgptf2qltn3" path="res://characters/animations/SB_veteran/SB_veteran_00011.png" id="15_thlq3"]
+[ext_resource type="Texture2D" uid="uid://dvl3bo2o5lsqj" path="res://characters/animations/SB_veteran/SB_veteran_00012.png" id="16_2pxhq"]
+[ext_resource type="Texture2D" uid="uid://d3idk25ry78hc" path="res://characters/animations/SB_veteran/SB_veteran_00013.png" id="17_7sc16"]
+[ext_resource type="Texture2D" uid="uid://c16msb6sg6lkf" path="res://characters/animations/SB_veteran/SB_veteran_00014.png" id="18_ewbeg"]
+[ext_resource type="Texture2D" uid="uid://cuysklnui8iyi" path="res://characters/animations/SB_veteran/SB_veteran_00015.png" id="19_seml1"]
+[ext_resource type="Texture2D" uid="uid://dprdidkg0rym2" path="res://characters/animations/SB_veteran/SB_veteran_00016.png" id="20_ydb7l"]
+[ext_resource type="Texture2D" uid="uid://bpy3dbr2y8shg" path="res://characters/animations/SB_veteran/SB_veteran_00017.png" id="21_hq61f"]
+[ext_resource type="Texture2D" uid="uid://bt2ai1ke5pjdn" path="res://characters/animations/SB_veteran/SB_veteran_00018.png" id="22_24p5l"]
+[ext_resource type="Texture2D" uid="uid://db60l2dc2pcn4" path="res://characters/animations/SB_veteran/SB_veteran_00019.png" id="23_3ej5s"]
+[ext_resource type="Texture2D" uid="uid://di01avehatp4h" path="res://characters/animations/SB_veteran/SB_veteran_00020.png" id="24_2ht1u"]
+[ext_resource type="Texture2D" uid="uid://dbwg16754unbx" path="res://characters/animations/SB_veteran/SB_veteran_00021.png" id="25_l5dmf"]
+[ext_resource type="Texture2D" uid="uid://b4gituepjqgiu" path="res://characters/animations/SB_veteran/SB_veteran_00022.png" id="26_hs567"]
+[ext_resource type="Texture2D" uid="uid://8wqg0sfc223x" path="res://characters/animations/SB_veteran/SB_veteran_00023.png" id="27_oksni"]
+[ext_resource type="Texture2D" uid="uid://cm4jlg2s2vcql" path="res://characters/animations/SB_veteran/SB_veteran_00024.png" id="28_2w313"]
+[ext_resource type="Texture2D" uid="uid://bpi0wawq8a2h7" path="res://characters/animations/SB_veteran/SB_veteran_00025.png" id="29_ltrj1"]
+[ext_resource type="Texture2D" uid="uid://bvrosqe887gcb" path="res://characters/animations/SB_veteran/SB_veteran_00026.png" id="30_q82fv"]
+[ext_resource type="Texture2D" uid="uid://buyicdagynrgb" path="res://characters/animations/SB_veteran/SB_veteran_00027.png" id="31_h2igt"]
+[ext_resource type="Texture2D" uid="uid://42p15sgyc8od" path="res://characters/animations/SB_veteran/SB_veteran_00028.png" id="32_htmmu"]
+[ext_resource type="Texture2D" uid="uid://v18m5thmdsov" path="res://characters/animations/SB_veteran/SB_veteran_00029.png" id="33_43squ"]
+[ext_resource type="Texture2D" uid="uid://c3k6neakwo1gd" path="res://characters/animations/SB_veteran/SB_veteran_00030.png" id="34_e00ie"]
+[ext_resource type="Texture2D" uid="uid://ds0hstw4eoh1b" path="res://characters/animations/SB_veteran/SB_veteran_00031.png" id="35_i30sb"]
+[ext_resource type="Texture2D" uid="uid://dkr254111im1w" path="res://characters/animations/SB_veteran/SB_veteran_00032.png" id="36_g5ln5"]
+[ext_resource type="Texture2D" uid="uid://lpkuumc6hnpo" path="res://characters/animations/SB_veteran/SB_veteran_00033.png" id="37_4d3dt"]
+[ext_resource type="Texture2D" uid="uid://dnxvmnjurj447" path="res://characters/animations/SB_veteran/SB_veteran_00034.png" id="38_ed33p"]
+[ext_resource type="Texture2D" uid="uid://bsnc5vbvj0gj3" path="res://characters/animations/SB_veteran/SB_veteran_00035.png" id="39_scui2"]
+[ext_resource type="Texture2D" uid="uid://c0hvhoww5lcpl" path="res://characters/animations/SB_veteran/SB_veteran_00036.png" id="40_icgwl"]
+[ext_resource type="Texture2D" uid="uid://d10fjfyd81i2m" path="res://characters/animations/SB_veteran/SB_veteran_00037.png" id="41_088qa"]
+[ext_resource type="Texture2D" uid="uid://kb8spwwg8cn5" path="res://characters/animations/SB_veteran/SB_veteran_00038.png" id="42_vc0cr"]
+[ext_resource type="Texture2D" uid="uid://bbdoesbdac8o2" path="res://characters/animations/SB_veteran/SB_veteran_00039.png" id="43_b61es"]
+[ext_resource type="Texture2D" uid="uid://cnwi5chc617su" path="res://characters/animations/SB_veteran/SB_veteran_00040.png" id="44_6qpi8"]
+[ext_resource type="Texture2D" uid="uid://ccnhmw6aijjlt" path="res://characters/animations/SB_veteran/SB_veteran_00041.png" id="45_ka64r"]
+[ext_resource type="Texture2D" uid="uid://bxmrnuc4i6252" path="res://characters/animations/SB_veteran/SB_veteran_00042.png" id="46_6ah3t"]
+[ext_resource type="Texture2D" uid="uid://cw7aggrkqul8e" path="res://characters/animations/SB_veteran/SB_veteran_00043.png" id="47_25iao"]
+[ext_resource type="Texture2D" uid="uid://b4jfsd6yjhrss" path="res://characters/animations/SB_veteran/SB_veteran_00044.png" id="48_wtdpn"]
+[ext_resource type="Texture2D" uid="uid://bdh0ncq5imprc" path="res://characters/animations/SB_veteran/SB_veteran_00045.png" id="49_diviv"]
+[ext_resource type="Texture2D" uid="uid://dvysbcnxg854n" path="res://characters/animations/SB_veteran/SB_veteran_00046.png" id="50_vuwfl"]
+[ext_resource type="Texture2D" uid="uid://2i231n2pinc0" path="res://characters/animations/SB_veteran/SB_veteran_00047.png" id="51_ktfod"]
+[ext_resource type="Texture2D" uid="uid://b5cvkrkvr7f5f" path="res://characters/animations/SB_veteran/SB_veteran_00048.png" id="52_yihjl"]
+[ext_resource type="Texture2D" uid="uid://rdbmaumyq7o2" path="res://characters/animations/SB_veteran/SB_veteran_00049.png" id="53_2xca7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xwmey"]
+size = Vector2(150, 360)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3km80"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_0a2s0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hog6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_km7ge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_52kru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1ej2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_6aniq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_f3heb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_mk08c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_glyti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_w7kic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yposb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_thlq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_2pxhq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7sc16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ewbeg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_seml1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ydb7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_hq61f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_24p5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_3ej5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_2ht1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_l5dmf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_hs567")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_oksni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_2w313")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ltrj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_q82fv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_h2igt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_htmmu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_43squ")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_e00ie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_i30sb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_g5ln5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_4d3dt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ed33p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_scui2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_icgwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_088qa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_vc0cr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_b61es")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_6qpi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_ka64r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_6ah3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_25iao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_wtdpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_diviv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_vuwfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_ktfod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_yihjl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_2xca7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[node name="Veteran" type="Area2D" unique_id=1413212771]
+script = ExtResource("1_bokvh")
+character_name = "veteran"
+dialogue_options = ExtResource("2_xt485")
+metadata/_custom_type_script = "uid://c4v5w4emtjff6"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=523519374]
+position = Vector2(0, -180)
+shape = SubResource("RectangleShape2D_xwmey")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=878550476]
+position = Vector2(0, 13)
+scale = Vector2(0.45200005, 0.316)
+texture = ExtResource("3_3km80")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1495505302]
+position = Vector2(0, -217)
+sprite_frames = SubResource("SpriteFrames_3km80")

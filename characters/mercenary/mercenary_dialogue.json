@@ -1,0 +1,25 @@
+{
+	"greeting": {
+		"lines": [
+			"I see you have these stubborn stallions well under control.",
+			"It is important to have a firm hand with those kinds of creatures. Otherwise, they’ll step out of line.",
+			"If you take me along on your journey, my trusty sword and I will ensure you have a peaceful journey and pleasant nights."
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,mercenary"
+		]
+	},
+	"deny": {
+		"lines": [
+			"If this is your decision, I must accept it. But you might regret it when you hear the knives of the first ambush.",
+			"action:reject_character,mercenary"
+		]
+	}
+}

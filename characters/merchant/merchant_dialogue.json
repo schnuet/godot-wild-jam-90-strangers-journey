@@ -1,0 +1,26 @@
+{
+	"greeting": {
+		"lines": [
+			"Good day, my dear coachman.",
+			"As I see it, you have an illustrious vehicle here.",
+			"And you look well prepared, too. But prudence is the better part of valor, my friend.",
+			"So what do you say, am I allowed to travel with you?"
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,merchant"
+		]
+	},
+	"deny": {
+		"lines": [
+			"My money and I shall stay here and wait for better opportunities.",
+			"action:reject_character,merchant"
+		]
+	}
+}

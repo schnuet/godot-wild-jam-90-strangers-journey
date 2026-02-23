@@ -1,9 +1,353 @@
 [gd_scene format=3 uid="uid://baq0v277kc2h8"]
 
 [ext_resource type="Script" uid="uid://h7r31p8u4nlj" path="res://02_carriage/character_cards/character_card.gd" id="1_xf0es"]
+[ext_resource type="Texture2D" uid="uid://b5j2t7hft1gti" path="res://02_carriage/character_cards/sprites/Karten/Normal/barde_karte_normal.png" id="2_jgbr1"]
+[ext_resource type="Texture2D" uid="uid://cpm8vvx0tybxp" path="res://02_carriage/character_cards/sprites/Karten/Normal/gepack_karte.png" id="2_mc7jn"]
+[ext_resource type="Texture2D" uid="uid://c8raku1d7fnch" path="res://02_carriage/character_cards/sprites/Karten/Hunger/barde_karte_hunger.png" id="2_vbmi2"]
+[ext_resource type="Texture2D" uid="uid://cq3lxcv54olll" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/barde_karte_verletzt.png" id="3_0gv2n"]
+[ext_resource type="Texture2D" uid="uid://cjewjtn88yyhu" path="res://02_carriage/character_cards/sprites/Karten/Normal/baer_karte_normal.png" id="3_7h7jj"]
+[ext_resource type="Texture2D" uid="uid://d2bm7bmrt7els" path="res://02_carriage/character_cards/sprites/Karten/Hunger/baer_karte_hunger.png" id="4_l0es7"]
+[ext_resource type="Texture2D" uid="uid://bxmqskpwmi4yl" path="res://02_carriage/character_cards/sprites/Karten/Normal/imkerin_karte_normal.png" id="4_x3x6h"]
+[ext_resource type="Texture2D" uid="uid://ctlbgodqk4ujs" path="res://02_carriage/character_cards/sprites/Karten/Normal/femme_karte_normal.png" id="5_w6x4q"]
+[ext_resource type="Texture2D" uid="uid://blb5thj2m7w0j" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/baer_karte_verletzt.png" id="6_sd3m6"]
+[ext_resource type="Texture2D" uid="uid://ul6rvig2hvbq" path="res://02_carriage/character_cards/sprites/Karten/Normal/soldner_karte_normal.png" id="6_te7bc"]
+[ext_resource type="Texture2D" uid="uid://bi8o8tf3ch33d" path="res://02_carriage/character_cards/sprites/Karten/Hunger/imkerin_karte_hunger.png" id="6_uies3"]
+[ext_resource type="Texture2D" uid="uid://bacpcnn26idq7" path="res://02_carriage/character_cards/sprites/Karten/Normal/nervos_karte_normal.png" id="7_afm4e"]
+[ext_resource type="Texture2D" uid="uid://bwvkyvq8bqbrq" path="res://02_carriage/character_cards/sprites/Karten/Hunger/femme_karte_hunger.png" id="8_4nss0"]
+[ext_resource type="Texture2D" uid="uid://bmoapbnr1kwqr" path="res://02_carriage/character_cards/sprites/Karten/Normal/dieb_karte_normal.png" id="8_a5br0"]
+[ext_resource type="Texture2D" uid="uid://cbw7a1x67h44v" path="res://02_carriage/character_cards/sprites/Karten/Normal/veteran_karte_normal.png" id="9_jlmes"]
+[ext_resource type="Texture2D" uid="uid://cg0ook50nru2r" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/imkerin_karte_verletzt.png" id="9_qibqa"]
+[ext_resource type="Texture2D" uid="uid://bb1u40c8fsh67" path="res://02_carriage/character_cards/sprites/Karten/Hunger/soldner_karte_hunger.png" id="10_0ic00"]
+[ext_resource type="Texture2D" uid="uid://dq2hl67th5qa8" path="res://02_carriage/character_cards/sprites/Karten/Hunger/fluch_karte_hunger.png" id="11_2hfyt"]
+[ext_resource type="Texture2D" uid="uid://bygaas145upe5" path="res://02_carriage/character_cards/sprites/Karten/Normal/fluch_karte_normal.png" id="11_4m3k7"]
+[ext_resource type="Texture2D" uid="uid://lpqis4l5l6vr" path="res://02_carriage/character_cards/sprites/Karten/Hunger/nervos_karte_hunger.png" id="12_3ykus"]
+[ext_resource type="Texture2D" uid="uid://cwkrmijdieoyt" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/femme_karte_verletzt.png" id="12_tqa2b"]
+[ext_resource type="Texture2D" uid="uid://fflvq47vwdo0" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/fluch_karte_verletzt.png" id="13_mywx8"]
+[ext_resource type="Texture2D" uid="uid://dxdwy6npljmoj" path="res://02_carriage/character_cards/sprites/Karten/Hunger/dieb_karte_hunger.png" id="14_8fofu"]
+[ext_resource type="Texture2D" uid="uid://bw1wqdjtjoa4e" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/soldner_karte_verletzt.png" id="15_4m3k7"]
+[ext_resource type="Texture2D" uid="uid://bu6gliwnfu2gh" path="res://02_carriage/character_cards/sprites/Karten/Normal/hellseherin_karte_normal.png" id="15_8vbly"]
+[ext_resource type="Texture2D" uid="uid://b3nol7a6nrtr8" path="res://02_carriage/character_cards/sprites/Karten/Hunger/hellseherin_karte_hunger.png" id="16_6n41c"]
+[ext_resource type="Texture2D" uid="uid://u27yk46y01jj" path="res://02_carriage/character_cards/sprites/Karten/Hunger/veteran_karte_hunger.png" id="16_me2td"]
+[ext_resource type="Texture2D" uid="uid://dnovjrew1r3x8" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/nervos_karte_verletzt.png" id="18_8vbly"]
+[ext_resource type="Texture2D" uid="uid://dnv0xh7l56ipc" path="res://02_carriage/character_cards/sprites/Karten/Normal/handler_karte_normal.png" id="19_efhog"]
+[ext_resource type="Texture2D" uid="uid://b06wxma2kb04j" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/hellseherin_karte_verletzt.png" id="19_rgugb"]
+[ext_resource type="Texture2D" uid="uid://dmy0080tejh3g" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/dieb_karte_verletzt.png" id="21_efhog"]
+[ext_resource type="Texture2D" uid="uid://o0o6x6eklq1v" path="res://02_carriage/character_cards/sprites/Karten/Hunger/handler_karte_hunger.png" id="21_tvq3h"]
+[ext_resource type="Texture2D" uid="uid://cstbanwcr3iv2" path="res://02_carriage/character_cards/sprites/Karten/Normal/priester_karte_normal.png" id="23_at8s1"]
+[ext_resource type="Texture2D" uid="uid://dk3ot4dhhr4b5" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/veteran_karte_verletzt.png" id="24_at8s1"]
+[ext_resource type="Texture2D" uid="uid://d0veajcw7cn5s" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/handler_karte_verletzt.png" id="25_t5rix"]
+[ext_resource type="Texture2D" uid="uid://dxwhb3ta1jxjs" path="res://02_carriage/character_cards/sprites/Karten/Hunger/priester_karte_hunger.png" id="26_iwaor"]
+[ext_resource type="Texture2D" uid="uid://cu2t8w2l40hss" path="res://02_carriage/character_cards/sprites/Karten/Verletzt/priester_karte_verletzt.png" id="31_4ui5f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vbmi2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mc7jn")
+}],
+"loop": true,
+"name": &"baggage_beekeeper_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mc7jn")
+}],
+"loop": true,
+"name": &"baggage_merchant_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vbmi2")
+}],
+"loop": true,
+"name": &"bard_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_0gv2n")
+}],
+"loop": true,
+"name": &"bard_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jgbr1")
+}],
+"loop": true,
+"name": &"bard_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_l0es7")
+}],
+"loop": true,
+"name": &"bear_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_sd3m6")
+}],
+"loop": true,
+"name": &"bear_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_7h7jj")
+}],
+"loop": true,
+"name": &"bear_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_uies3")
+}],
+"loop": true,
+"name": &"beekeeper_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_qibqa")
+}],
+"loop": true,
+"name": &"beekeeper_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_x3x6h")
+}],
+"loop": true,
+"name": &"beekeeper_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_2hfyt")
+}],
+"loop": true,
+"name": &"cursed_one_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_mywx8")
+}],
+"loop": true,
+"name": &"cursed_one_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_4m3k7")
+}],
+"loop": true,
+"name": &"cursed_one_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_4nss0")
+}],
+"loop": true,
+"name": &"femme_fatale_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_tqa2b")
+}],
+"loop": true,
+"name": &"femme_fatale_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_w6x4q")
+}],
+"loop": true,
+"name": &"femme_fatale_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_6n41c")
+}],
+"loop": true,
+"name": &"fortune_teller_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_rgugb")
+}],
+"loop": true,
+"name": &"fortune_teller_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_8vbly")
+}],
+"loop": true,
+"name": &"fortune_teller_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_0ic00")
+}],
+"loop": true,
+"name": &"mercenary_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_4m3k7")
+}],
+"loop": true,
+"name": &"mercenary_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_te7bc")
+}],
+"loop": true,
+"name": &"mercenary_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_tvq3h")
+}],
+"loop": true,
+"name": &"merchant_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_t5rix")
+}],
+"loop": true,
+"name": &"merchant_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_efhog")
+}],
+"loop": true,
+"name": &"merchant_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_3ykus")
+}],
+"loop": true,
+"name": &"nervous_man_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_8vbly")
+}],
+"loop": true,
+"name": &"nervous_man_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_afm4e")
+}],
+"loop": true,
+"name": &"nervous_man_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_iwaor")
+}],
+"loop": true,
+"name": &"priest_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_4ui5f")
+}],
+"loop": true,
+"name": &"priest_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_at8s1")
+}],
+"loop": true,
+"name": &"priest_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_8fofu")
+}],
+"loop": true,
+"name": &"thief_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_efhog")
+}],
+"loop": true,
+"name": &"thief_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_a5br0")
+}],
+"loop": true,
+"name": &"thief_normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_me2td")
+}],
+"loop": true,
+"name": &"veteran_hunger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_at8s1")
+}],
+"loop": true,
+"name": &"veteran_hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_jlmes")
+}],
+"loop": true,
+"name": &"veteran_normal",
+"speed": 5.0
+}]
 
 [node name="CharacterCard" type="TextureButton" unique_id=1309582356]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(200, 200)
 offset_right = 150.0
 offset_bottom = 150.0
 script = ExtResource("1_xf0es")
@@ -16,7 +360,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-color = Color(0.7011326, 0.8145831, 3.85046e-07, 1)
+color = Color(0.6783743, 0.7979295, 0.5891515, 1)
 
 [node name="Label" type="Label" parent="." unique_id=338256237 groups=["character_card"]]
 layout_mode = 1
@@ -34,3 +378,22 @@ grow_vertical = 2
 mouse_filter = 1
 text = "mercenary"
 horizontal_alignment = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1517144336]
+sprite_frames = SubResource("SpriteFrames_vbmi2")
+animation = &"baggage_merchant_normal"
+centered = false
+
+[node name="HungryMarker" type="Node2D" parent="." unique_id=322547902]
+visible = false
+
+[node name="Polygon2D" type="Polygon2D" parent="HungryMarker" unique_id=712349145]
+color = Color(0.8508502, 0.0008438283, 0.8939794, 1)
+polygon = PackedVector2Array(109, 14, 118, 24, 127, 12, 139, 15, 135, 29, 146, 35, 150, 19, 150, 1, 150, -11, 135, -14, 136, 0, 126, 1, 123, -16, 112, -17)
+
+[node name="WoundedMarker" type="Node2D" parent="." unique_id=1058756017]
+visible = false
+
+[node name="Polygon2D" type="Polygon2D" parent="WoundedMarker" unique_id=734182895]
+color = Color(1, 0, 0, 1)
+polygon = PackedVector2Array(0, -1, 49, 60, 54, 42, 91, 66, 105, 52, 127, 72, 250, 84, 250, 0)

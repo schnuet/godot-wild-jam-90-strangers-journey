@@ -1,0 +1,155 @@
+[gd_scene format=3 uid="uid://dkurd6xmbpte1"]
+
+[ext_resource type="Script" uid="uid://bkxw1bkkps2lw" path="res://characters/mercenary/mercenary.gd" id="1_lg1ru"]
+[ext_resource type="JSON" path="res://characters/merchant/merchant_dialogue.json" id="2_u71fm"]
+[ext_resource type="Texture2D" uid="uid://dp02hmvksggou" path="res://design/shadow.png" id="3_j41gr"]
+[ext_resource type="Texture2D" uid="uid://bcluhdjqu4j8d" path="res://characters/animations/SB_händler/SB_händler_00000.png" id="4_n7k12"]
+[ext_resource type="Texture2D" uid="uid://c3r1tiii0kqya" path="res://characters/animations/SB_händler/SB_händler_00001.png" id="5_m42pt"]
+[ext_resource type="Texture2D" uid="uid://cku380k74a0d5" path="res://characters/animations/SB_händler/SB_händler_00002.png" id="6_8rk0r"]
+[ext_resource type="Texture2D" uid="uid://c5jsmgiy67g75" path="res://characters/animations/SB_händler/SB_händler_00003.png" id="7_8mtki"]
+[ext_resource type="Texture2D" uid="uid://dxp06arb8x5dh" path="res://characters/animations/SB_händler/SB_händler_00004.png" id="8_enw3u"]
+[ext_resource type="Texture2D" uid="uid://cweqh4m00tnc4" path="res://characters/animations/SB_händler/SB_händler_00005.png" id="9_k2v2o"]
+[ext_resource type="Texture2D" uid="uid://cm5mcgvlks584" path="res://characters/animations/SB_händler/SB_händler_00006.png" id="10_o51d6"]
+[ext_resource type="Texture2D" uid="uid://dtu7axp8dh0im" path="res://characters/animations/SB_händler/SB_händler_00007.png" id="11_7us1i"]
+[ext_resource type="Texture2D" uid="uid://crjxnpyfm1ieo" path="res://characters/animations/SB_händler/SB_händler_00008.png" id="12_wdxi1"]
+[ext_resource type="Texture2D" uid="uid://borowt4vau2mh" path="res://characters/animations/SB_händler/SB_händler_00009.png" id="13_op50f"]
+[ext_resource type="Texture2D" uid="uid://cjnvwbptxcxwa" path="res://characters/animations/SB_händler/SB_händler_00010.png" id="14_6mtxy"]
+[ext_resource type="Texture2D" uid="uid://cnn2ev0fy1bqh" path="res://characters/animations/SB_händler/SB_händler_00011.png" id="15_xu7vp"]
+[ext_resource type="Texture2D" uid="uid://bm4tm4xyy4587" path="res://characters/animations/SB_händler/SB_händler_00012.png" id="16_mx6ag"]
+[ext_resource type="Texture2D" uid="uid://bdo01x30cdm0m" path="res://characters/animations/SB_händler/SB_händler_00013.png" id="17_5h6m3"]
+[ext_resource type="Texture2D" uid="uid://caoxfglaiyaun" path="res://characters/animations/SB_händler/SB_händler_00014.png" id="18_g7t0u"]
+[ext_resource type="Texture2D" uid="uid://blwoixi7vkpf8" path="res://characters/animations/SB_händler/SB_händler_00015.png" id="19_c02m3"]
+[ext_resource type="Texture2D" uid="uid://c4msnhn03b67e" path="res://characters/animations/SB_händler/SB_händler_00016.png" id="20_xm84t"]
+[ext_resource type="Texture2D" uid="uid://2rumn4ja73kw" path="res://characters/animations/SB_händler/SB_händler_00017.png" id="21_mab8o"]
+[ext_resource type="Texture2D" uid="uid://bu8f727mhqg4w" path="res://characters/animations/SB_händler/SB_händler_00018.png" id="22_48s3v"]
+[ext_resource type="Texture2D" uid="uid://dputq80wcq4je" path="res://characters/animations/SB_händler/SB_händler_00019.png" id="23_xwmc7"]
+[ext_resource type="Texture2D" uid="uid://ug212c6shmm5" path="res://characters/animations/SB_händler/SB_händler_00020.png" id="24_rhf8t"]
+[ext_resource type="Texture2D" uid="uid://bain58iakkhgu" path="res://characters/animations/SB_händler/SB_händler_00021.png" id="25_lk7s2"]
+[ext_resource type="Texture2D" uid="uid://buy4xds8nslux" path="res://characters/animations/SB_händler/SB_händler_00022.png" id="26_tc7v7"]
+[ext_resource type="Texture2D" uid="uid://cecja5gt6psht" path="res://characters/animations/SB_händler/SB_händler_00023.png" id="27_unxtx"]
+[ext_resource type="Texture2D" uid="uid://0px4w4d1lmyc" path="res://characters/animations/SB_händler/SB_händler_00024.png" id="28_e2k0l"]
+[ext_resource type="Texture2D" uid="uid://baxgjd04iqcmr" path="res://characters/animations/SB_händler/SB_händler_00025.png" id="29_u61hb"]
+[ext_resource type="Texture2D" uid="uid://bjbgtumavh4ao" path="res://characters/animations/SB_händler/SB_händler_00026.png" id="30_b6igf"]
+[ext_resource type="Texture2D" uid="uid://bpphmta88vxl3" path="res://characters/animations/SB_händler/SB_händler_00027.png" id="31_uoymf"]
+[ext_resource type="Texture2D" uid="uid://b4bd34v7smtcg" path="res://characters/animations/SB_händler/SB_händler_00028.png" id="32_qrkkj"]
+[ext_resource type="Texture2D" uid="uid://dbclxjftgn2td" path="res://characters/animations/SB_händler/SB_händler_00029.png" id="33_xtdnv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xwmey"]
+size = Vector2(178, 374)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nilu8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_n7k12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_m42pt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8rk0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8mtki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_enw3u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_k2v2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_o51d6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7us1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wdxi1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_op50f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6mtxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xu7vp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_mx6ag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_5h6m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_g7t0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_c02m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_xm84t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_mab8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_48s3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_xwmc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_rhf8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_lk7s2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_tc7v7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_unxtx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_e2k0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_u61hb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_b6igf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_uoymf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_qrkkj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_xtdnv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[node name="Merchant" type="Area2D" unique_id=1413212771]
+script = ExtResource("1_lg1ru")
+character_name = "merchant"
+dialogue_options = ExtResource("2_u71fm")
+metadata/_custom_type_script = "uid://c4v5w4emtjff6"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=523519374]
+position = Vector2(0, -187)
+shape = SubResource("RectangleShape2D_xwmey")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=251551824]
+position = Vector2(0, 13)
+scale = Vector2(0.383, 0.316)
+texture = ExtResource("3_j41gr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1112136032]
+position = Vector2(0, -203)
+sprite_frames = SubResource("SpriteFrames_nilu8")

@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://c50vhh8f87mip"]
+
+[ext_resource type="Script" uid="uid://8yr74jte27gc" path="res://03_map/camp.gd" id="1_u12ba"]
+[ext_resource type="Texture2D" uid="uid://dp02hmvksggou" path="res://design/shadow.png" id="2_0lk7q"]
+[ext_resource type="Texture2D" uid="uid://qx2c7ogs623q" path="res://03_map/assets/map_assets/marker_hunger.png" id="2_2sn4m"]
+[ext_resource type="Texture2D" uid="uid://ct6uqilnow33i" path="res://03_map/assets/map_assets/marker_craftsman.png" id="3_0lk7q"]
+[ext_resource type="Texture2D" uid="uid://fnkt3qhpdgpc" path="res://03_map/assets/map_assets/marker_passenger.png" id="4_dxchr"]
+[ext_resource type="Texture2D" uid="uid://bm5umhjoxc04x" path="res://03_map/assets/map_assets/camp_1.png" id="5_wd2b1"]
+[ext_resource type="Texture2D" uid="uid://b880u4wdtoj6" path="res://03_map/assets/map_assets/camp_2.png" id="6_01fwh"]
+[ext_resource type="Texture2D" uid="uid://cncy2cce5eaor" path="res://03_map/assets/map_assets/camp_3.png" id="7_e35ai"]
+[ext_resource type="Texture2D" uid="uid://cxaaqxvkw28ny" path="res://03_map/assets/map_assets/camp_4.png" id="8_t236m"]
+[ext_resource type="Texture2D" uid="uid://dgrj2dv8rc1ch" path="res://03_map/assets/map_assets/camp_5.png" id="9_fi0a1"]
+[ext_resource type="Texture2D" uid="uid://c3yx8xublwdi" path="res://03_map/assets/map_assets/camp_6.png" id="10_a8rkd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2sn4m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0lk7q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dxchr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wd2b1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_01fwh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a3oxk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_wd2b1")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_01fwh")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_e35ai")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_t236m")
+}],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_fi0a1")
+}],
+"loop": true,
+"name": &"5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_a8rkd")
+}],
+"loop": true,
+"name": &"6",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e35ai"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t236m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fi0a1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a8rkd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a3oxk"]
+
+[node name="Camp" type="Button" unique_id=100378017 groups=["camp_marker"]]
+custom_minimum_size = Vector2(60, 60)
+offset_right = 184.0
+offset_bottom = 136.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2sn4m")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0lk7q")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dxchr")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_wd2b1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_01fwh")
+script = ExtResource("1_u12ba")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=1274150427]
+modulate = Color(1, 1, 1, 0.40784314)
+position = Vector2(81.5, 72.00001)
+scale = Vector2(0.302, 0.34800002)
+texture = ExtResource("2_0lk7q")
+
+[node name="CookIcon" type="Node2D" parent="." unique_id=429066158]
+position = Vector2(14.499992, 7.0000076)
+
+[node name="MarkerHunger" type="Sprite2D" parent="CookIcon" unique_id=434471211]
+position = Vector2(147, -18)
+texture = ExtResource("2_2sn4m")
+
+[node name="WoodworkerIcon" type="Node2D" parent="." unique_id=1479783574]
+position = Vector2(14.499992, 7.0000076)
+
+[node name="MarkerCraftsman" type="Sprite2D" parent="WoodworkerIcon" unique_id=1765191436]
+position = Vector2(150, -11)
+texture = ExtResource("3_0lk7q")
+
+[node name="PassengersIcon" type="Node2D" parent="." unique_id=1460979402]
+position = Vector2(14.499992, 7.0000076)
+
+[node name="MarkerPassenger" type="Sprite2D" parent="PassengersIcon" unique_id=2016836105]
+position = Vector2(145, -19)
+texture = ExtResource("4_dxchr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=49203650]
+position = Vector2(80.49999, 61.000008)
+sprite_frames = SubResource("SpriteFrames_a3oxk")
+animation = &"6"
+
+[node name="Button" type="Button" parent="." unique_id=189130123]
+layout_mode = 0
+offset_left = -18.0
+offset_top = -23.0
+offset_right = 191.0
+offset_bottom = 152.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_e35ai")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_t236m")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fi0a1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_a8rkd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_a3oxk")
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

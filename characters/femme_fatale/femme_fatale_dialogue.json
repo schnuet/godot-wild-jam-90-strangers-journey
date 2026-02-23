@@ -1,0 +1,27 @@
+{
+	"greeting": {
+		"lines": [
+			"Don’t you look handsome my dear.",
+			"Oh my, you shouldn’t be afraid of a strong woman.",
+			"I know my way around, you know.",
+			"This pretty head isn’t just a hat rack. You won’t regret my company.",
+			"I can be a hoot and your fellow companions will love me, not just for my dazzling looks."
+		],
+		"options": [
+			["Promise a place in your carriage", "accept"],
+			["Deny for now", "deny"]
+		]
+	},
+	"accept": {
+		"lines": [
+			"Thank you. I shall see you on board.",
+			"action:add_character,femme_fatale"
+		]
+	},
+	"deny": {
+		"lines": [
+			"I will stay here then. That is your loss. And maybe bad luck for some handsome fighters.",
+			"action:reject_character,femme_fatale"
+		]
+	}
+}
